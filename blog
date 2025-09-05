@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Ideas claras para crecer: estrategia, marca y marketing para Pymes.">
+  <meta name="theme-color" content="#1A2B4C">
+  <title>Blog · Kaire Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html" aria-label="Kaire Digital Home">
+      <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#1A2B4C"/><path d="M7 16l5-8 5 8" stroke="#2ECC71" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Kaire<span class="accent">Digital</span></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Principal">
+      <ul>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+      <a href="contacto.html" class="btn btn-accent hide-mobile">Agenda una llamada</a>
+  </div>
+</header>
+<main>
+
+<section class="section page-hero">
+  <div class="container narrow reveal">
+    <h1>Blog</h1>
+    <p>Ideas prácticas y accionables para dueños de negocio que quieren crecer con claridad.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="filters reveal">
+      <button class="chip filter active" data-filter="all">Todo</button>
+      <button class="chip filter" data-filter="estrategia">Estrategia</button>
+      <button class="chip filter" data-filter="branding">Branding</button>
+      <button class="chip filter" data-filter="redes">Redes</button>
+      <button class="chip filter" data-filter="casos">Casos</button>
+    </div>
+    <div class="grid cards-3" id="blog-grid">
+      <article class="card post reveal" data-cat="branding">
+        <h3>¿Logo o estrategia primero?</h3>
+        <p>Antes de diseñar, define propósito, público y propuesta de valor. El logo multiplica lo que ya es claro.</p>
+        <a class="link" href="#">Leer más</a>
+      </article>
+      <article class="card post reveal" data-cat="estrategia">
+        <h3>Buyer persona en 30 minutos</h3>
+        <p>Una guía rápida para perfilar a tu cliente ideal y alinear tus mensajes.</p>
+        <a class="link" href="#">Leer más</a>
+      </article>
+      <article class="card post reveal" data-cat="casos">
+        <h3>Aprendizajes: Oxxo vs la tiendita</h3>
+        <p>Qué puede copiar una tiendita (y qué no) del gigante del retail.</p>
+        <a class="link" href="#">Leer más</a>
+      </article>
+      <article class="card post reveal" data-cat="redes">
+        <h3>Creatividades que convierten</h3>
+        <p>4 elementos que hacen que un anuncio detenga el scroll y venda.</p>
+        <a class="link" href="#">Leer más</a>
+      </article>
+      <article class="card post reveal" data-cat="casos">
+        <h3>Caso T‑Privi: 15 min o menos</h3>
+        <p>Cómo una promesa clara y una operación disciplinada elevan la confianza.</p>
+        <a class="link" href="#">Leer más</a>
+      </article>
+      <article class="card post reveal" data-cat="estrategia">
+        <h3>Reporte mensual sin humo</h3>
+        <p>Qué debe incluir para tomar decisiones reales y mejorar cada mes.</p>
+        <a class="link" href="#">Leer más</a>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo footer-logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#1A2B4C"/><path d="M7 16l5-8 5 8" stroke="#2ECC71" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Kaire<span class="accent">Digital</span></span>
+      </div>
+      <p>Agencia de estrategia de marca y marketing digital para Pymes mexicanas y de LATAM. Resultados claros, comunicación honesta y ejecución enfocada.</p>
+    </div>
+    <div>
+      <h4>Menú</h4>
+      <ul class="footer-links">
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul class="footer-links">
+        <li><a href="mailto:hola@kairedigital.mx">hola@kairedigital.mx</a></li>
+        <li><a href="https://wa.me/524611234567" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li>Guanajuato, México · Atención remota LATAM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container legal">
+    <small>© 2025 Kaire Digital. Hecho con estrategia, creatividad y datos.</small>
+  </div>
+</footer>
+<a href="#top" class="back-to-top" aria-label="Volver arriba">↑</a>
+<script src="app.js"></script>
+</body>
+</html>
