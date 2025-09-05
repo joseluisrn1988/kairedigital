@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Conoce la misión, visión, valores y metodología de Kaire Digital.">
+  <meta name="theme-color" content="#1A2B4C">
+  <title>Nosotros · Kaire Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div id="top"></div>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html" aria-label="Kaire Digital Home">
+      <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#1A2B4C"/><path d="M7 16l5-8 5 8" stroke="#2ECC71" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Kaire<span class="accent">Digital</span></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Principal">
+      <ul>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </nav>
+      <a href="contacto.html" class="btn btn-accent hide-mobile">Agenda una llamada</a>
+  </div>
+</header>
+<main>
+
+<!-- Sección de encabezado con imagen de fondo -->
+<section class="hero-header">
+  <div class="hero-overlay">
+    <div class="container">
+      <h2>Conoce nuestra historia y lo que nos motiva a crecer contigo</h2>
+    </div>
+  </div>
+</section>
+
+<section class="section page-hero">
+  <div class="container narrow reveal">
+    <h1>Nosotros</h1>
+    <p>Somos una agencia boutique enfocada en Pymes mexicanas y latinoamericanas. Combinamos estrategia, creatividad y operación para lograr resultados medibles.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid two-col">
+    <div class="reveal">
+      <h2>Misión</h2>
+      <p>Impulsar a las empresas a crecer con estrategias digitales claras, medibles y efectivas, fortaleciendo el emprendimiento local en México и LATAM para que las Pymes compitan como grandes.</p>
+      <h2>Visión</h2>
+      <p>Ser el socio estratégico de referencia para Pymes que buscan claridad, crecimiento rentable y decisiones basadas en datos.</p>
+    </div>
+    <div class="reveal">
+      <h2>Valores</h2>
+      <ul class="checklist">
+        <li>Honestidad radical en la comunicación</li>
+        <li>Responsabilidad por resultados</li>
+        <li>Empatía por el contexto local</li>
+        <li>Aprendizaje y mejora continua</li>
+      </ul>
+      <div class="stats">
+        <div class="stat"><span class="counter" data-target="95">0</span>% satisfacción</div>
+        <div class="stat"><span class="counter" data-target="72">0</span>% recomendaciones</div>
+        <div class="stat"><span class="counter" data-target="30">0</span> días para ver avances</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container reveal">
+    <h2>Nuestra metodología</h2>
+    <ol class="steps big">
+      <li><span>1</span> Descubrimiento: respuesta &le; 2 h hábiles</li>
+      <li><span>2</span> Diagnóstico (20–30 min): objetivos y métricas actuales</li>
+      <li><span>3</span> Propuesta (48–72 h): objetivos, entregables, cronograma, inversión</li>
+      <li><span>4</span> Onboarding: accesos, brand kit, buyer persona, prioridades</li>
+      <li><span>5</span> Ejecución: sprints quincenales; tablero Kanban compartido</li>
+      <li><span>6</span> Reporte mensual: resultados, insights y decisiones</li>
+      <li><span>7</span> Cierre/Renovación: evaluación de ROI y siguientes pasos</li>
+    </ol>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid two-col">
+    <div class="reveal">
+      <h2>Quién lidera</h2>
+      <p>Fundada por Jose Luis Ramirez (Ing. en Robótica, UPG). Experiencia en ingeniería, calidad y negocios; enfoque en estrategia, análisis y creatividad orientada a ventas.</p>
+    </div>
+    <div class="card reveal">
+      <h3>Diferenciadores</h3>
+      <ul class="list">
+        <li>Estrategia + creatividades + operación en un solo lugar</li>
+        <li>Procesos claros y comunicación constante</li>
+        <li>Enfoque en Pymes con contexto México/LATAM</li>
+        <li>Entregables accionables, sin paja</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo footer-logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#1A2B4C"/><path d="M7 16l5-8 5 8" stroke="#2ECC71" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Kaire<span class="accent">Digital</span></span>
+      </div>
+      <p>Agencia de estrategia de marca y marketing digital para Pymes mexicanas y de LATAM. Resultados claros, comunicación honesta y ejecución enfocada.</p>
+    </div>
+    <div>
+      <h4>Menú</h4>
+      <ul class="footer-links">
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul class="footer-links">
+        <li><a href="mailto:hola@kairedigital.mx">hola@kairedigital.mx</a></li>
+        <li><a href="https://wa.me/524611234567" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li>Guanajuato, México · Atención remota LATAM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container legal">
+    <small>© 2025 Kaire Digital. Hecho con estrategia, creatividad y datos.</small>
+  </div>
+</footer>
+<a href="#top" class="back-to-top" aria-label="Volver arriba">↑</a>
+<script src="app.js"></script>
+</body>
+</html>
