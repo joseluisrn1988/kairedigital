@@ -1,42 +1,152 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es-MX">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kaire Digital</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Kaire Digital: estrategia de marca y marketing medible para Pymes de México y LATAM.">
+  <meta name="theme-color" content="#1A2B4C">
+  <title>Inicio · Kaire Digital</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <h1>Bienvenido a Kaire Digital</h1>
-    <nav>
+<div id="top"></div>
+<header class="site-header">
+  <div class="container nav-wrap">
+    <a class="logo" href="index.html" aria-label="Kaire Digital Home">
+      <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#1A2B4C"/><path d="M7 16l5-8 5 8" stroke="#2ECC71" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Kaire<span class="accent">Digital</span></span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Principal">
       <ul>
-    <li><a href="#">Inicio</a></li>
-    <li><a href="servicios.html">Servicios</a></li>
-    <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
-  </header>
+      <a href="contacto.html" class="btn btn-accent hide-mobile">Agenda una llamada</a>
+  </div>
+</header>
+<main>
 
-  <main>
-    <section>
-      <h2>¿Quiénes somos?</h2>
-      <p>Somos una agencia digital enfocada en branding, diseño web y e-commerce que empodera marcas audaces.</p>
-    </section>
-
-    <section>
-      <h2>Servicios</h2>
-      <ul>
-        <li>Diseño web personalizado</li>
-        <li>Gestión de redes sociales</li>
-        <li>Estrategia de marca</li>
-        <li>Tiendas en línea</li>
+<section class="hero section">
+  <div class="container hero-grid">
+    <div class="hero-copy reveal">
+      <h1>Haz que tu marca <span class="grad">crezca con claridad</span></h1>
+      <p>Diseñamos estrategias digitales claras, medibles y efectivas para que tu negocio compita como grande: enfoque, constancia y resultados que entiendes.</p>
+      <div class="actions">
+        <a class="btn btn-primary" href="contacto.html">Quiero un diagnóstico gratis</a>
+        <a class="btn btn-ghost" href="servicios.html">Ver servicios</a>
+      </div>
+      <ul class="trust-badges">
+        <li><strong class="counter" data-target="300">0</strong>+ activos diseñados</li>
+        <li><strong class="counter" data-target="50">0</strong>+ Pymes asesoradas</li>
+        <li><strong class="counter" data-target="15">0</strong>+ sectores atendidos</li>
       </ul>
-    </section>
-  </main>
+    </div>
+    <div class="hero-card reveal">
+      <div class="card kpi">
+        <h3>Tu camino, paso a paso</h3>
+        <ol class="steps">
+          <li><span>1</span> Diagnóstico de 20 min</li>
+          <li><span>2</span> Propuesta en 48–72 h</li>
+          <li><span>3</span> Sprints quincenales</li>
+          <li><span>4</span> Reporte mensual claro</li>
+        </ol>
+        <a class="btn btn-accent btn-block" href="contacto.html">Agenda ahora</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-  <footer>
-    <p>&copy; 2025 Kaire Digital. Todos los derechos reservados.</p>
-  </footer>
+<section class="section">
+  <div class="container">
+    <h2 class="section-title">Lo que hacemos</h2>
+    <div class="grid cards-3">
+      <a class="card service tilt reveal" href="servicios.html#estrategia">
+        <h3>Estrategia de Marca &amp; Voz</h3>
+        <p>Propósito, posicionamiento, buyer persona y voz consistente para comunicar con impacto.</p>
+        <span class="chip">Estratégico</span>
+      </a>
+      <a class="card service tilt reveal" href="servicios.html#creativos">
+        <h3>Creatividades y Anuncios</h3>
+        <p>Diseños que detienen el scroll y convierten: piezas para Facebook, Instagram y TikTok.</p>
+        <span class="chip">Performance</span>
+      </a>
+      <a class="card service tilt reveal" href="servicios.html#social">
+        <h3>Gestión de Redes</h3>
+        <p>Calendario, publicación constante y métricas accionables. Sin humo, con datos.</p>
+        <span class="chip">Operación</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container proof-grid">
+    <div class="reveal">
+      <h2 class="section-title">Por qué Kaire</h2>
+      <ul class="checklist">
+        <li>Comunicación honesta y cercana</li>
+        <li>Metas claras y medibles (no promesas vacías)</li>
+        <li>Enfoque LATAM: entendemos tu contexto</li>
+        <li>Estrategia + Creatividad + Ejecución</li>
+      </ul>
+    </div>
+    <div class="card quote reveal">
+      <p>"Con Kaire entendimos en una semana lo que no pudimos ver en meses. La propuesta llegó clara, con métricas y un plan realista."</p>
+      <span class="author">Cliente Pyme · Guanajuato</span>
+      </div>
+  </div>
+</section>
+
+<section class="section cta">
+  <div class="container reveal">
+    <h2>¿Listo para crecer con claridad?</h2>
+    <p>Te damos un mini-diagnóstico gratis por WhatsApp y te proponemos los siguientes pasos.</p>
+    <a class="btn btn-primary" href="https://wa.me/524611234567" target="_blank" rel="noopener">Hablar por WhatsApp</a>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <div>
+      <div class="logo footer-logo">
+        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#1A2B4C"/><path d="M7 16l5-8 5 8" stroke="#2ECC71" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <span>Kaire<span class="accent">Digital</span></span>
+      </div>
+      <p>Agencia de estrategia de marca y marketing digital para Pymes mexicanas y de LATAM. Resultados claros, comunicación honesta y ejecución enfocada.</p>
+    </div>
+    <div>
+      <h4>Menú</h4>
+      <ul class="footer-links">
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="blog.html">Blog</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Contacto</h4>
+      <ul class="footer-links">
+        <li><a href="mailto:hola@kairedigital.mx">hola@kairedigital.mx</a></li>
+        <li><a href="https://wa.me/524611234567" target="_blank" rel="noopener">WhatsApp</a></li>
+        <li>Guanajuato, México · Atención remota LATAM</li>
+      </ul>
+    </div>
+  </div>
+  <div class="container legal">
+    <small>© 2025 Kaire Digital. Hecho con estrategia, creatividad y datos.</small>
+  </div>
+</footer>
+<a href="#top" class="back-to-top" aria-label="Volver arriba">↑</a>
+<script src="app.js"></script>
 </body>
 </html>
