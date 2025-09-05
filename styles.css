@@ -100,7 +100,7 @@ a:hover { text-decoration: underline; }
 .hero-header {
   background: 
     linear-gradient(rgba(26, 43, 76, 0), rgba(26, 43, 76, 0)),
-    url('Nosotros/EncabezadoNosotros.png') 
+    url('https://github.com/joseluisrn1988/kairedigital/blob/main/EncabezadoNosotros.png') 
     center/cover no-repeat;
   height: 50vh;
   min-height: 300px;
