@@ -13,15 +13,19 @@
 </head>
 <body>
 <div id="top"></div>
+<!-- Header: Navegación principal del sitio -->
 <header class="site-header">
   <div class="container nav-wrap">
+    <!-- Logo: Enlace a la página principal con marca -->
     <a class="logo" href="index.html" aria-label="Kaire Digital Home">
       <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#1A2B4C"/><path d="M7 16l5-8 5 8" stroke="#2ECC71" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span>Kaire<span class="accent">Digital</span></span>
     </a>
+    <!-- Botón menú móvil: Controla la visualización del menú en dispositivos pequeños -->
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
       <span></span><span></span><span></span>
     </button>
+    <!-- Navegación: Menú principal de acceso a las secciones -->
     <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Principal">
       <ul>
         <li><a href="nosotros.html">Nosotros</a></li>
@@ -30,21 +34,27 @@
         <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
-      <a href="contacto.html" class="btn btn-accent hide-mobile">Agenda una llamada</a>
+    <!-- CTA: Llamado a la acción principal -->
+    <a href="contacto.html" class="btn btn-accent hide-mobile">Agenda una llamada</a>
   </div>
 </header>
 <main>
 
-<section class="section page-hero">
+<!-- Hero: Sección principal de la página de contacto -->
+<section class="section page-hero contacto-hero">
+  <canvas id="particle-canvas"></canvas>
   <div class="container narrow reveal">
     <h1>Contacto</h1>
     <p>Cuéntanos de tu negocio y te respondemos en menos de 2 horas hábiles.</p>
   </div>
 </section>
 
+<!-- Formulario: Sección principal de contacto -->
 <section class="section">
   <div class="container contact-grid">
+    <!-- Formulario de contacto: Recopila información de prospectos -->
     <form id="contact-form" class="card form reveal" novalidate>
+      <!-- Campos de nombre y correo -->
       <div class="two">
         <div class="field">
           <label for="nombre">Nombre</label>
@@ -57,6 +67,7 @@
           <small class="error"></small>
         </div>
       </div>
+      <!-- Campos de negocio y ubicación -->
       <div class="two">
         <div class="field">
           <label for="negocio">Nombre del negocio</label>
@@ -69,11 +80,13 @@
           <small class="error"></small>
         </div>
       </div>
+      <!-- Campo de objetivo: Información clave para el diagnóstico -->
       <div class="field">
         <label for="objetivo">¿Qué quieres lograr este trimestre?</label>
         <textarea id="objetivo" name="objetivo" rows="4" placeholder="Ej. Aumentar ventas 20% con anuncios en Instagram y una mejor propuesta de valor" required></textarea>
         <small class="error"></small>
       </div>
+      <!-- Selector de servicio: Ayuda a clasificar la consulta -->
       <div class="field">
         <label for="servicio">Servicio de interés</label>
         <select id="servicio" name="servicio">
@@ -84,9 +97,11 @@
           <option>Otro</option>
         </select>
       </div>
+      <!-- Botón de envío: Envía el formulario -->
       <button class="btn btn-primary" type="submit">Enviar</button>
       <p id="form-msg" role="status" aria-live="polite"></p>
     </form>
+    <!-- Información de contacto: Datos alternativos de contacto -->
     <div class="reveal">
       <div class="card">
         <h3>Atención</h3>
@@ -103,6 +118,7 @@
 </section>
 
 </main>
+<!-- Footer: Pie de página con información de contacto y enlaces -->
 <footer class="site-footer">
   <div class="container footer-grid">
     <div>
