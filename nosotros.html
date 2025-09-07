@@ -13,15 +13,19 @@
 </head>
 <body>
 <div id="top"></div>
+<!-- Header: Navegación principal del sitio -->
 <header class="site-header">
   <div class="container nav-wrap">
+    <!-- Logo: Enlace a la página principal con marca -->
     <a class="logo" href="index.html" aria-label="Kaire Digital Home">
       <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#1A2B4C"/><path d="M7 16l5-8 5 8" stroke="#2ECC71" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span>Kaire<span class="accent">Digital</span></span>
     </a>
+    <!-- Botón menú móvil: Controla la visualización del menú en dispositivos pequeños -->
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
       <span></span><span></span><span></span>
     </button>
+    <!-- Navegación: Menú principal de acceso a las secciones -->
     <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Principal">
       <ul>
         <li><a href="nosotros.html">Nosotros</a></li>
@@ -30,35 +34,31 @@
         <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
-      <a href="contacto.html" class="btn btn-accent hide-mobile">Agenda una llamada</a>
+    <!-- CTA: Llamado a la acción principal -->
+    <a href="contacto.html" class="btn btn-accent hide-mobile">Agenda una llamada</a>
   </div>
 </header>
 <main>
 
-<!-- Sección de encabezado con imagen de fondo -->
-<section class="hero-header">
-  <div class="hero-overlay">
-    <div class="container">
-      <h2>Conoce nuestra historia y lo que nos motiva a crecer contigo</h2>
-    </div>
-  </div>
-</section>
-
-<section class="section page-hero">
+<!-- Hero: Sección principal de la página "Nosotros" -->
+<section class="section page-hero nosotros-hero">
+  <canvas id="particle-canvas"></canvas>
   <div class="container narrow reveal">
     <h1>Nosotros</h1>
     <p>Somos una agencia boutique enfocada en Pymes mexicanas y latinoamericanas. Combinamos estrategia, creatividad y operación para lograr resultados medibles.</p>
   </div>
 </section>
 
+<!-- Misión y visión: Información fundamental de la empresa -->
 <section class="section">
   <div class="container grid two-col">
     <div class="reveal">
       <h2>Misión</h2>
-      <p>Impulsar a las empresas a crecer con estrategias digitales claras, medibles y efectivas, fortaleciendo el emprendimiento local en México и LATAM para que las Pymes compitan como grandes.</p>
+      <p>Impulsar a las empresas a crecer con estrategias digitales claras, medibles y efectivas, fortaleciendo el emprendimiento local en México y LATAM para que las Pymes compitan como grandes.</p>
       <h2>Visión</h2>
       <p>Ser el socio estratégico de referencia para Pymes que buscan claridad, crecimiento rentable y decisiones basadas en datos.</p>
     </div>
+    <!-- Valores y estadísticas: Muestra los principios y logros -->
     <div class="reveal">
       <h2>Valores</h2>
       <ul class="checklist">
@@ -76,6 +76,7 @@
   </div>
 </section>
 
+<!-- Metodología: Explica el proceso de trabajo -->
 <section class="section alt">
   <div class="container reveal">
     <h2>Nuestra metodología</h2>
@@ -91,6 +92,7 @@
   </div>
 </section>
 
+<!-- Liderazgo y diferenciadores: Información sobre el fundador y ventajas competitivas -->
 <section class="section">
   <div class="container grid two-col">
     <div class="reveal">
@@ -110,6 +112,7 @@
 </section>
 
 </main>
+<!-- Footer: Pie de página con información de contacto y enlaces -->
 <footer class="site-footer">
   <div class="container footer-grid">
     <div>
