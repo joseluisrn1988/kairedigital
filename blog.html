@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Ideas claras para crecer: estrategia, marca y marketing para Pymes.">
+  <meta name="description" content="Blog de Kaire Digital: estrategias de marketing, branding y crecimiento para Pymes.">
   <meta name="theme-color" content="#1A2B4C">
   <title>Blog · Kaire Digital</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,15 +13,19 @@
 </head>
 <body>
 <div id="top"></div>
+<!-- Header: Navegación principal del sitio -->
 <header class="site-header">
   <div class="container nav-wrap">
+    <!-- Logo: Enlace a la página principal con marca -->
     <a class="logo" href="index.html" aria-label="Kaire Digital Home">
       <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#1A2B4C"/><path d="M7 16l5-8 5 8" stroke="#2ECC71" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span>Kaire<span class="accent">Digital</span></span>
     </a>
+    <!-- Botón menú móvil: Controla la visualización del menú en dispositivos pequeños -->
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
       <span></span><span></span><span></span>
     </button>
+    <!-- Navegación: Menú principal de acceso a las secciones -->
     <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Principal">
       <ul>
         <li><a href="nosotros.html">Nosotros</a></li>
@@ -30,63 +34,169 @@
         <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
-      <a href="contacto.html" class="btn btn-accent hide-mobile">Agenda una llamada</a>
+    <!-- CTA: Llamado a la acción principal -->
+    <a href="contacto.html" class="btn btn-accent hide-mobile">Agenda una llamada</a>
   </div>
 </header>
 <main>
 
-<section class="section page-hero">
+<!-- Hero: Sección principal del blog -->
+<section class="section page-hero blog-hero">
+  <canvas id="particle-canvas"></canvas>
   <div class="container narrow reveal">
     <h1>Blog</h1>
-    <p>Ideas prácticas y accionables para dueños de negocio que quieren crecer con claridad.</p>
+    <p>Estrategias, casos de estudio y guías prácticas para hacer crecer tu negocio en el entorno digital.</p>
   </div>
 </section>
 
+<!-- Filtros de categorías: Permite filtrar artículos por tema -->
 <section class="section">
   <div class="container">
-    <div class="filters reveal">
-      <button class="chip filter active" data-filter="all">Todo</button>
-      <button class="chip filter" data-filter="estrategia">Estrategia</button>
-      <button class="chip filter" data-filter="branding">Branding</button>
-      <button class="chip filter" data-filter="redes">Redes</button>
-      <button class="chip filter" data-filter="casos">Casos</button>
+    <div class="category-filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="estrategia">Estrategia</button>
+      <button class="filter-btn" data-filter="redes-sociales">Redes Sociales</button>
+      <button class="filter-btn" data-filter="branding">Branding</button>
+      <button class="filter-btn" data-filter="analitica">Analítica</button>
     </div>
-    <div class="grid cards-3" id="blog-grid">
-      <article class="card post reveal" data-cat="branding">
-        <h3>¿Logo o estrategia primero?</h3>
-        <p>Antes de diseñar, define propósito, público y propuesta de valor. El logo multiplica lo que ya es claro.</p>
-        <a class="link" href="#">Leer más</a>
+  </div>
+</section>
+
+<!-- Listado de artículos: Muestra las publicaciones del blog -->
+<section class="section">
+  <div class="container">
+    <div class="grid blog-grid">
+      <!-- Artículo 1 -->
+      <article class="card blog-card reveal" data-category="estrategia">
+        <div class="blog-card-image">
+          <img src="https://via.placeholder.com/400x250?text=Imagen+Blog" alt="5 estrategias de marketing digital para Pymes">
+        </div>
+        <div class="blog-card-content">
+          <span class="blog-category">Estrategia</span>
+          <h3><a href="#">5 estrategias de marketing digital para Pymes en 2025</a></h3>
+          <p>Aprende las tácticas más efectivas para posicionar tu negocio con presupuestos limitados pero con máxima efectividad.</p>
+          <div class="blog-meta">
+            <span>15 Marzo 2025</span>
+            <span>•</span>
+            <span>5 min lectura</span>
+          </div>
+        </div>
       </article>
-      <article class="card post reveal" data-cat="estrategia">
-        <h3>Buyer persona en 30 minutos</h3>
-        <p>Una guía rápida para perfilar a tu cliente ideal y alinear tus mensajes.</p>
-        <a class="link" href="#">Leer más</a>
+      
+      <!-- Artículo 2 -->
+      <article class="card blog-card reveal" data-category="redes-sociales">
+        <div class="blog-card-image">
+          <img src="https://via.placeholder.com/400x250?text=Imagen+Blog" alt="Instagram para negocios locales">
+        </div>
+        <div class="blog-card-content">
+          <span class="blog-category">Redes Sociales</span>
+          <h3><a href="#">Cómo usar Instagram para impulsar negocios locales</a></h3>
+          <p>Guía paso a paso para crear contenido que conecte con tu audiencia local y convierta seguidores en clientes.</p>
+          <div class="blog-meta">
+            <span>8 Marzo 2025</span>
+            <span>•</span>
+            <span>7 min lectura</span>
+          </div>
+        </div>
       </article>
-      <article class="card post reveal" data-cat="casos">
-        <h3>Aprendizajes: Oxxo vs la tiendita</h3>
-        <p>Qué puede copiar una tiendita (y qué no) del gigante del retail.</p>
-        <a class="link" href="#">Leer más</a>
+      
+      <!-- Artículo 3 -->
+      <article class="card blog-card reveal" data-category="branding">
+        <div class="blog-card-image">
+          <img src="https://via.placeholder.com/400x250?text=Imagen+Blog" alt="Construir marca consistente">
+        </div>
+        <div class="blog-card-content">
+          <span class="blog-category">Branding</span>
+          <h3><a href="#">La guía definitiva para construir una marca consistente</a></h3>
+          <p>Elementos clave para desarrollar una identidad de marca sólida que transmita confianza y profesionalismo.</p>
+          <div class="blog-meta">
+            <span>1 Marzo 2025</span>
+            <span>•</span>
+            <span>10 min lectura</span>
+          </div>
+        </div>
       </article>
-      <article class="card post reveal" data-cat="redes">
-        <h3>Creatividades que convierten</h3>
-        <p>4 elementos que hacen que un anuncio detenga el scroll y venda.</p>
-        <a class="link" href="#">Leer más</a>
+      
+      <!-- Artículo 4 -->
+      <article class="card blog-card reveal" data-category="analitica">
+        <div class="blog-card-image">
+          <img src="https://via.placeholder.com/400x250?text=Imagen+Blog" alt="Métricas importantes">
+        </div>
+        <div class="blog-card-content">
+          <span class="blog-category">Analítica</span>
+          <h3><a href="#">Las 8 métricas que realmente importan para tu negocio</a></h3>
+          <p>Enfócate en lo importante: estas métricas te ayudarán a tomar mejores decisiones y optimizar tus resultados.</p>
+          <div class="blog-meta">
+            <span>22 Febrero 2025</span>
+            <span>•</span>
+            <span>6 min lectura</span>
+          </div>
+        </div>
       </article>
-      <article class="card post reveal" data-cat="casos">
-        <h3>Caso T‑Privi: 15 min o menos</h3>
-        <p>Cómo una promesa clara y una operación disciplinada elevan la confianza.</p>
-        <a class="link" href="#">Leer más</a>
+      
+      <!-- Artículo 5 -->
+      <article class="card blog-card reveal" data-category="estrategia">
+        <div class="blog-card-image">
+          <img src="https://via.placeholder.com/400x250?text=Imagen+Blog" alt="Presupuesto marketing">
+        </div>
+        <div class="blog-card-content">
+          <span class="blog-category">Estrategia</span>
+          <h3><a href="#">Cómo asignar tu presupuesto de marketing en 2025</a></h3>
+          <p>Decidir dónde invertir puede ser complicado. Te mostramos cómo priorizar según tus objetivos y industria.</p>
+          <div class="blog-meta">
+            <span>15 Febrero 2025</span>
+            <span>•</span>
+            <span>8 min lectura</span>
+          </div>
+        </div>
       </article>
-      <article class="card post reveal" data-cat="estrategia">
-        <h3>Reporte mensual sin humo</h3>
-        <p>Qué debe incluir para tomar decisiones reales y mejorar cada mes.</p>
-        <a class="link" href="#">Leer más</a>
+      
+      <!-- Artículo 6 -->
+      <article class="card blog-card reveal" data-category="redes-sociales">
+        <div class="blog-card-image">
+          <img src="https://via.placeholder.com/400x250?text=Imagen+Blog" alt="Contenido viral">
+        </div>
+        <div class="blog-card-content">
+          <span class="blog-category">Redes Sociales</span>
+          <h3><a href="#">El arte de crear contenido viral (sin perder tu esencia)</a></h3>
+          <p>Descubre cómo crear contenido que se comparta orgánicamente manteniendo la autenticidad de tu marca.</p>
+          <div class="blog-meta">
+            <span>8 Febrero 2025</span>
+            <span>•</span>
+            <span>9 min lectura</span>
+          </div>
+        </div>
       </article>
+    </div>
+    
+    <!-- Paginación: Navegación entre páginas de artículos -->
+    <div class="pagination">
+      <a href="#" class="pagination-btn">← Anterior</a>
+      <a href="#" class="pagination-btn active">1</a>
+      <a href="#" class="pagination-btn">2</a>
+      <a href="#" class="pagination-btn">3</a>
+      <a href="#" class="pagination-btn">Siguiente →</a>
+    </div>
+  </div>
+</section>
+
+<!-- Newsletter: Suscripción para recibir actualizaciones -->
+<section class="section alt">
+  <div class="container narrow">
+    <div class="card newsletter-card">
+      <h2>No te pierdas ningún artículo</h2>
+      <p>Suscríbete a nuestro newsletter y recibe estrategias prácticas directamente en tu correo.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Tu correo electrónico" required>
+        <button type="submit" class="btn btn-primary">Suscribirme</button>
+      </form>
+      <small>Respetamos tu privacidad y no compartimos tu información.</small>
     </div>
   </div>
 </section>
 
 </main>
+<!-- Footer: Pie de página con información de contacto y enlaces -->
 <footer class="site-footer">
   <div class="container footer-grid">
     <div>
