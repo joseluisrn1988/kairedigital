@@ -13,15 +13,19 @@
 </head>
 <body>
 <div id="top"></div>
+<!-- Header: Navegación principal del sitio -->
 <header class="site-header">
   <div class="container nav-wrap">
+    <!-- Logo: Enlace a la página principal con marca -->
     <a class="logo" href="index.html" aria-label="Kaire Digital Home">
       <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#1A2B4C"/><path d="M7 16l5-8 5 8" stroke="#2ECC71" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span>Kaire<span class="accent">Digital</span></span>
     </a>
+    <!-- Botón menú móvil: Controla la visualización del menú en dispositivos pequeños -->
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
       <span></span><span></span><span></span>
     </button>
+    <!-- Navegación: Menú principal de acceso a las secciones -->
     <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Principal">
       <ul>
         <li><a href="nosotros.html">Nosotros</a></li>
@@ -30,64 +34,74 @@
         <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
-      <a href="contacto.html" class="btn btn-accent hide-mobile">Agenda una llamada</a>
+    <!-- CTA: Llamado a la acción principal -->
+    <a href="contacto.html" class="btn btn-accent hide-mobile">Agenda una llamada</a>
   </div>
 </header>
 <main>
 
+<!-- Hero: Sección principal de bienvenida -->
 <section class="hero section">
+  <canvas id="particle-canvas"></canvas>
   <div class="container hero-grid">
+    <!-- Contenido principal del hero -->
     <div class="hero-copy reveal">
-      <h1>Haz que tu marca <span class="grad">crezca con claridad</span></h1>
-      <p>Diseñamos estrategias digitales claras, medibles y efectivas para que tu negocio compita como grande: enfoque, constancia y resultados que entiendes.</p>
+      <h1>Crecemos contigo: <span class="grad">+Estrategia +Clientes +Ventas sostenidas</span></h1>
+      <p>Impulsamos a las empresas con estrategias de marca y marketing digital adaptadas al mercado latinoamericano, con un acompañamiento personalizado y enfoque en resultados medibles ayudándolas a profesionalizar su imagen para crecer de manera sostenible.</p>
+      <!-- Acciones: Botones principales de conversión -->
       <div class="actions">
-        <a class="btn btn-primary" href="contacto.html">Quiero un diagnóstico gratis</a>
-        <a class="btn btn-ghost" href="servicios.html">Ver servicios</a>
+        <a class="btn btn-primary" href="blog.html">Aprende Gratis</a>
+        <a class="btn btn-ghost" href="servicios.html">Soluciones para tu negocio</a>
       </div>
+      <!-- Badges de confianza: Elementos que generan credibilidad -->
       <ul class="trust-badges">
         <li><strong class="counter" data-target="300">0</strong>+ activos diseñados</li>
         <li><strong class="counter" data-target="50">0</strong>+ Pymes asesoradas</li>
         <li><strong class="counter" data-target="15">0</strong>+ sectores atendidos</li>
       </ul>
     </div>
+    <!-- Tarjeta de proceso: Muestra los pasos del servicio -->
     <div class="hero-card reveal">
       <div class="card kpi">
-        <h3>Tu camino, paso a paso</h3>
+        <h3>Beneficios de trabajar con nosotros</h3>
         <ol class="steps">
-          <li><span>1</span> Diagnóstico de 20 min</li>
-          <li><span>2</span> Propuesta en 48–72 h</li>
-          <li><span>3</span> Sprints quincenales</li>
-          <li><span>4</span> Reporte mensual claro</li>
+          <li><span>1</span> Respuesta rapida</li>
+          <li><span>2</span> Resultados medibles</li>
+          <li><span>3</span> Acompañamiento real</li>
+          <li><span>4</span> Complementación con IA</li>
         </ol>
-        <a class="btn btn-accent btn-block" href="contacto.html">Agenda ahora</a>
+        <a class="btn btn-accent btn-block" href="nosotros.html">Conocenos</a>
       </div>
     </div>
   </div>
 </section>
 
+<!-- Servicios: Muestra los principales servicios ofrecidos -->
 <section class="section">
   <div class="container">
-    <h2 class="section-title">Lo que hacemos</h2>
+    <h2 class="section-title">El secreto para diferenciarte y vender más</h2>
+    <p class="section-text">Las marcas que venden más lo logran porque tienen una estrategia de marca que les da una ventaja brutal. Y aquí es donde entramos nosotros: Definimos cómo quieres que te vean, qué te hace único y cómo vas a comunicarlo para atraer a los clientes que pagan, recomiendan y se quedan contigo. Sin eso, todo lo demás es improvisar.</p>
     <div class="grid cards-3">
-      <a class="card service tilt reveal" href="servicios.html#estrategia">
-        <h3>Estrategia de Marca &amp; Voz</h3>
-        <p>Propósito, posicionamiento, buyer persona y voz consistente para comunicar con impacto.</p>
-        <span class="chip">Estratégico</span>
-      </a>
-      <a class="card service tilt reveal" href="servicios.html#creativos">
-        <h3>Creatividades y Anuncios</h3>
-        <p>Diseños que detienen el scroll y convierten: piezas para Facebook, Instagram y TikTok.</p>
-        <span class="chip">Performance</span>
-      </a>
-      <a class="card service tilt reveal" href="servicios.html#social">
-        <h3>Gestión de Redes</h3>
-        <p>Calendario, publicación constante y métricas accionables. Sin humo, con datos.</p>
-        <span class="chip">Operación</span>
-      </a>
+      <!-- Servicio 1: Estrategia de marca -->
+      <div class="card service tilt reveal" data-modal="modal1">
+        <h3>¿Cómo me ayuda la estrategia de marca a vender más?</h3>
+        <span class="chip">Leer mas...</span>
+      </div>
+      <!-- Servicio 2: Creatividades y anuncios -->
+      <div class="card service tilt reveal" data-modal="modal2">
+        <h3>La verdad sobre lo que realmente es una marca</h3>
+        <span class="chip">Leer mas...</span>
+      </div>
+      <!-- Servicio 3: Gestión de redes -->
+      <div class="card service tilt reveal" data-modal="modal3">
+        <h3>Señales de que ya es hora de trabajar tu estrategia de marca</h3>
+        <span class="chip">Leer mas...</span>
+      </div>
     </div>
   </div>
 </section>
 
+<!-- Propuesta de valor: Sección que destaca los diferenciales -->
 <section class="section alt">
   <div class="container proof-grid">
     <div class="reveal">
@@ -99,6 +113,7 @@
         <li>Estrategia + Creatividad + Ejecución</li>
       </ul>
     </div>
+    <!-- Testimonio: Comentario de cliente para generar confianza -->
     <div class="card quote reveal">
       <p>"Con Kaire entendimos en una semana lo que no pudimos ver en meses. La propuesta llegó clara, con métricas y un plan realista."</p>
       <span class="author">Cliente Pyme · Guanajuato</span>
@@ -106,6 +121,7 @@
   </div>
 </section>
 
+<!-- CTA: Llamado a la acción final -->
 <section class="section cta">
   <div class="container reveal">
     <h2>¿Listo para crecer con claridad?</h2>
@@ -115,6 +131,7 @@
 </section>
 
 </main>
+<!-- Footer: Pie de página con información de contacto y enlaces -->
 <footer class="site-footer">
   <div class="container footer-grid">
     <div>
@@ -148,5 +165,54 @@
 </footer>
 <a href="#top" class="back-to-top" aria-label="Volver arriba">↑</a>
 <script src="app.js"></script>
+
+<!-- Modales -->
+<div class="modal-overlay" id="modal1">
+  <div class="modal">
+    <button class="modal-close">&times;</button>
+    <h2 class="modal-title">¿Cómo me ayuda la estrategia de marca a vender más?</h2>
+    <div class="modal-content">
+      <p>La estrategia de marca ayuda a tu negocio a definir quién eres, qué haces y cómo lo haces. Con esa base, analiza a tus competidores y marca qué te hace diferente para poder posicionarte en el mercado.</p>
+      <p>Después identifica a tu cliente ideal: esa persona que realmente te compraría, pagaría por tus servicios y volvería una y otra vez. A partir de ahí, todo tu marketing —publicaciones, textos, anuncios y creativos— se enfoca en atraer y cautivar justamente a esos clientes.</p>
+      <p>De esta manera, tu inversión rinde más, porque no estás disparando a todos, sino hablando directo a quienes sí valoran lo que ofreces. Además, defines la experiencia que quieres darles y la transmites en cada punto de contacto con tu marca.</p>
+      <!-- Tu contenido extenso aquí -->
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal2">
+  <div class="modal">
+    <button class="modal-close">&times;</button>
+    <h2 class="modal-title">La verdad sobre lo que realmente es una marca</h2>
+    <div class="modal-content">
+      <p>Una marca no es lo que dices de tu negocio, sino lo que la gente percibe de ti. Todos tenemos una marca, sea buena o mala, porque siempre estamos transmitiendo algo.</p>
+      <p>Esa percepción no cambia de la noche a la mañana, pero sí puede transformarse cuando trabajas con estrategia: definiendo los mensajes correctos y ofreciendo experiencias consistentes.</p>
+      <p>De eso se trata la estrategia de marca: diseñar la comunicación que, con el tiempo, logra que tus clientes te vean como quieres ser visto, generando confianza y preferencia.</p>
+      <!-- Tu contenido extenso aquí -->
+    </div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal3">
+  <div class="modal">
+    <button class="modal-close">&times;</button>
+    <h2 class="modal-title">Señales de que ya es hora de trabajar tu estrategia de marca</h2>
+    <div class="modal-content">
+      <p>Tu negocio ya tiene una marca, quieras o no: es la percepción que las personas tienen de ti. La pregunta es si esa percepción te está ayudando a vender… o te está frenando.</p>
+      <p>Estas son algunas señales de que necesitas empezar a trabajar tu estrategia de marca:</p>
+      <ul>
+        <li>Te cuesta diferenciarte porque ofreces lo mismo que otros.</li>
+        <li>La gente no entiende claramente qué haces o qué te hace único.</li>
+        <li>Dependiendo del día, comunicas cosas distintas y sin coherencia.</li>
+        <li>Sientes que tus publicaciones y anuncios no atraen a los clientes correctos.</li>
+        <li>Estás compitiendo solo por precio y no por el valor de tu negocio.</li>
+      </ul>
+      <p></p>
+      <p>Si alguna de estas situaciones te suena, es momento de dejar de improvisar y empezar a construir una marca que genere confianza, atraiga a los clientes adecuados y aumente tus ventas.</p>
+      <!-- Tu contenido extenso aquí -->
+    </div>
+  </div>
+</div>
+
 </body>
 </html>
