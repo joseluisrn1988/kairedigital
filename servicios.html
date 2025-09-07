@@ -13,15 +13,19 @@
 </head>
 <body>
 <div id="top"></div>
+<!-- Header: Navegación principal del sitio -->
 <header class="site-header">
   <div class="container nav-wrap">
+    <!-- Logo: Enlace a la página principal con marca -->
     <a class="logo" href="index.html" aria-label="Kaire Digital Home">
       <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#1A2B4C"/><path d="M7 16l5-8 5 8" stroke="#2ECC71" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span>Kaire<span class="accent">Digital</span></span>
     </a>
+    <!-- Botón menú móvil: Controla la visualización del menú en dispositivos pequeños -->
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
       <span></span><span></span><span></span>
     </button>
+    <!-- Navegación: Menú principal de acceso a las secciones -->
     <nav id="primary-nav" class="site-nav" role="navigation" aria-label="Principal">
       <ul>
         <li><a href="nosotros.html">Nosotros</a></li>
@@ -30,21 +34,26 @@
         <li><a href="blog.html">Blog</a></li>
       </ul>
     </nav>
-      <a href="contacto.html" class="btn btn-accent hide-mobile">Agenda una llamada</a>
+    <!-- CTA: Llamado a la acción principal -->
+    <a href="contacto.html" class="btn btn-accent hide-mobile">Agenda una llamada</a>
   </div>
 </header>
 <main>
 
-<section class="section page-hero">
+<!-- Hero: Sección principal de la página de servicios -->
+<section class="section page-hero servicios-hero">
+  <canvas id="particle-canvas"></canvas>
   <div class="container narrow reveal">
     <h1>Servicios</h1>
     <p>Paquetes diseñados para darte claridad y acción inmediata. Escoge el nivel que necesitas ahora mismo.</p>
   </div>
 </section>
 
+<!-- Servicios principales: Los tres servicios principales ofrecidos -->
 <section class="section">
   <div class="container">
     <div class="grid cards-3">
+      <!-- Servicio 1: Estrategia de marca -->
       <div id="estrategia" class="card plan reveal">
         <span class="chip">Estrategia</span>
         <h3>Brand Strategy &amp; Voice Alignment</h3>
@@ -59,6 +68,7 @@
         <a href="contacto.html" class="btn btn-primary">Solicitar diagnóstico</a>
       </div>
 
+      <!-- Servicio 2: Creatividades y anuncios -->
       <div id="creativos" class="card plan reveal">
         <span class="chip">Performance</span>
         <h3>Creatividades y Anuncios</h3>
@@ -73,6 +83,7 @@
         <a href="contacto.html" class="btn btn-primary">Cotizar paquete</a>
       </div>
 
+      <!-- Servicio 3: Gestión de redes -->
       <div id="social" class="card plan reveal">
         <span class="chip">Operación</span>
         <h3>Gestión de Redes</h3>
@@ -90,6 +101,7 @@
   </div>
 </section>
 
+<!-- Servicios adicionales: Complementos que se pueden agregar -->
 <section class="section alt">
   <div class="container">
     <h2 class="section-title">Add-ons</h2>
@@ -111,6 +123,7 @@
 </section>
 
 </main>
+<!-- Footer: Pie de página con información de contacto y enlaces -->
 <footer class="site-footer">
   <div class="container footer-grid">
     <div>
