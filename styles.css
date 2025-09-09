@@ -140,6 +140,18 @@ a:hover {
   transition: 0.3s;
 }
 
+
+   /*Efecto de particulas moviles*/
+#particle-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+
 /* =============================================
    BOTONES - Estilos para todos los botones
    ============================================= */
@@ -219,326 +231,321 @@ a:hover {
    PÁGINA INDEX - Estilos específicos para homepage
    ============================================= */
 
-   /*Efecto de particulas moviles*/
-#particle-canvas {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 1;
-}
-
-/* hero: Sección principal de la homepage */
+/* Sección principal de la homepage */
 .hero {
-  position: relative;
-  padding: 4rem 0;
-  background: linear-gradient(135deg, rgba(5, 16, 39, 0.9) 0%, rgba(96, 255, 162, 0.7) 100%);
-  color: white;
-  border-radius: 0 0 20px 20px;
-  margin-bottom: 3rem;
-  overflow: hidden;  
+  position: relative; /* Establece posición relativa para elementos hijos absolutos */
+  padding: 4rem 0; /* Espaciado interno: 4rem arriba/abajo, 0 izquierda/derecha */
+  background: linear-gradient(135deg, rgba(5, 16, 39, 0.9) 0%, rgba(96, 255, 162, 0.7) 100%); /* Fondo con gradiente diagonal azul-verde */
+  color: white; /* Color de texto blanco */
+  border-radius: 0 0 20px 20px; /* Bordes redondeados solo en esquinas inferiores */
+  margin-bottom: 3rem; /* Margen inferior de 3rem */
+  overflow: hidden; /* Oculta cualquier contenido que sobresalga del contenedor */
 }
 
 /* hero-grid: Grid para layout del hero */
 .hero-grid {
-  position: relative;
-  z-index: 2;
-  display: grid;
-  grid-template-columns: 3fr 2fr;
-  gap: 3rem;
-  align-items: center;
+  position: relative; /* Posición relativa para contexto de apilamiento */
+  z-index: 2; /* Nivel de apilamiento superior al fondo */
+  display: grid; /* Activa el display grid */
+  grid-template-columns: 3fr 2fr; /* Dos columnas: primera 3 partes, segunda 2 partes */
+  gap: 3rem; /* Espacio de 3rem entre elementos del grid */
+  align-items: center; /* Centra verticalmente los elementos del grid */
 }
 
 /* hero-copy: Contenido textual del hero */
 .hero-copy h1 {
-  font-size: 3rem;
-  margin-bottom: 1.5rem;
-  color: white;
+  font-size: 3rem; /* Tamaño de fuente de 3rem (48px aprox) */
+  margin-bottom: 1.5rem; /* Margen inferior de 1.5rem */
+  color: white; /* Color de texto blanco */
 }
 
 /* grad: Texto con gradiente */
 .grad {
-  background: linear-gradient(90deg, #76ffaf, #6ac4ff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  background: linear-gradient(90deg, #76ffaf, #6ac4ff); /* Gradiente horizontal verde a azul */
+  -webkit-background-clip: text; /* Clip de fondo para texto (compatibilidad Webkit) */
+  background-clip: text; /* Clip de fondo para texto (estándar) */
+  color: transparent; /* Hace el color del texto transparente para mostrar el gradiente */
 }
 
-/* actions: Contenedor de botones de acción */
+/* actions: Contenedor de botones */
 .actions {
-  display: flex;
-  gap: 1rem;
-  margin: 2rem 0;
+  display: flex; /* Activa flexbox */
+  gap: 1rem; /* Espacio de 1rem entre elementos hijos */
+  margin: 2rem 0; /* Margen de 2rem arriba/abajo, 0 izquierda/derecha */
 }
 
 /* trust-badges: Elementos de confianza */
 .trust-badges {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-  margin-top: 2rem;
+  display: flex; /* Activa flexbox */
+  gap: 2rem; /* Espacio de 2rem entre elementos hijos */
+  list-style: none; /* Elimina los estilos de lista (viñetas) */
+  margin-top: 2rem; /* Margen superior de 2rem */
 }
 
 .trust-badges li {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  display: flex; /* Activa flexbox para items de lista */
+  flex-direction: column; /* Dirección de columna (apilado vertical) */
+  align-items: center; /* Centra horizontalmente los elementos */
 }
 
 .trust-badges strong {
-  font-size: 1.5rem;
-  color: #2ECC71;
+  font-size: 1.5rem; /* Tamaño de fuente de 1.5rem (24px aprox) */
+  color: var(--light); /* Color usando variable CSS --light */
 }
 
 /* hero-card: Tarjeta en el hero */
 .hero-card {
-  position: relative;
+  position: relative; /* Establece posición relativa para elementos hijos absolutos */
 }
 
 /* kpi: Tarjeta con indicadores clave */
 .kpi {
-  background: white;
-  color: var(--dark);
+  background: white; /* Fondo blanco */
+  color: var(--dark); /* Color de texto usando variable CSS --dark */
 }
 
 /* steps: Lista de pasos */
 .steps {
-  list-style: none;
-  margin: 1.5rem 0;
+  list-style: none; /* Elimina los estilos de lista (viñetas) */
+  margin: 1.5rem 0; /* Margen de 1.5rem arriba/abajo, 0 izquierda/derecha */
 }
 
 .steps li {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1rem;
-  gap: 1rem;
+  display: flex; /* Activa flexbox para items de lista */
+  align-items: center; /* Centra verticalmente los elementos */
+  margin-bottom: 1rem; /* Margen inferior de 1rem entre items */
+  gap: 1rem; /* Espacio de 1rem entre elementos hijos */
 }
 
 .steps li span {
-  background: var(--accent);
-  color: white;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-weight: bold;
+  background: var(--accent); /* Fondo usando variable CSS --accent */
+  color: white; /* Color de texto blanco */
+  width: 30px; /* Ancho fijo de 30px */
+  height: 30px; /* Alto fijo de 30px */
+  border-radius: 50%; /* Forma circular perfecta */
+  display: flex; /* Activa flexbox */
+  align-items: center; /* Centra verticalmente el contenido */
+  justify-content: center; /* Centra horizontalmente el contenido */
+  font-weight: bold; /* Texto en negrita */
 }
 
-/* section: Sección genérica */
+/***********************************************************************/
+/* section: Sección El secreto para diferenciarte y vender mas */
 .section {
-  padding: 4rem 0;
+  padding: 4rem 0; /* Espaciado interno: 4rem arriba/abajo, 0 izquierda/derecha */
 }
 
 /* section-title: Título de sección */
 .section-title {
-  text-align: center;
-  margin-bottom: 1rem;
-  font-size: 2.5rem;
-  background: linear-gradient(90deg, #2dd372, #105786);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-bottom: 1rem; /* Margen inferior de 1rem */
+  font-size: 2.5rem; /* Tamaño de fuente de 2.5rem (40px aprox) */
+  background: linear-gradient(90deg, #2dd372, #105786); /* Gradiente horizontal verde a azul oscuro */
+  -webkit-background-clip: text; /* Clip de fondo para texto (compatibilidad Webkit) */
+  background-clip: text; /* Clip de fondo para texto (estándar) */
+  color: transparent; /* Hace el color del texto transparente para mostrar el gradiente */
 }
 
 .section-text {
-  text-align: center;
-  margin-bottom: 4rem;
+  text-align: center; /* Centra el texto horizontalmente */
+  margin-bottom: 4rem; /* Margen inferior de 4rem */
 }
 
 /* grid: Sistema de grid */
 .grid {
-  display: grid;
-  gap: 2rem;
+  display: grid; /* Activa el display grid */
+  gap: 2rem; /* Espacio de 2rem entre elementos del grid */
 }
 
-/* cards-3: Grid de 3 columnas para tarjetas */
+/* cards-3: Grid de 3 columnas para tarjetas de contenido */
 .cards-3 {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas de igual tamaño (1 fracción cada una) */
 }
 
-/* service: Tarjeta de servicio */
+/* service: Tarjeta de contenido (3 columnas) */
 .service {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
+  height: 100%; /* Ocupa el 100% de la altura disponible */
+  display: flex; /* Activa flexbox */
+  flex-direction: column; /* Dirección de columna (apilado vertical) */
 }
 
 .service h3 {
-  color: var(--primary);
-  margin-bottom: 1rem;
+  color: var(--primary); /* Color usando variable CSS --primary */
+  margin-bottom: 1rem; /* Margen inferior de 1rem */
 }
 
-/* chip: Etiqueta para categorías */
+/* Botón Leer mas. en tarjetas de contenido (3 columnas)*/
 .chip {
-  background: var(--light);
-  color: var(--primary);
-  padding: 0.25rem 0.75rem;
-  border-radius: 20px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  display: inline-block;
-  margin-bottom: 1rem;
+  background: var(--light); /* Fondo usando variable CSS --primary */
+  color: var(--gray); /* Color de texto usando variable CSS --accent */
+  padding: 0.25rem 0.75rem; /* Espaciado interno: 0.25rem arriba/abajo, 0.75rem izquierda/derecha */
+  border-radius: 20px; /* Bordes redondeados de 20px */
+  font-size: 0.875rem; /* Tamaño de fuente de 0.875rem (14px aprox) */
+  font-weight: 600; /* Grosor de fuente seminegrita (600) */
+  display: inline-block; /* Display inline-block para mantener el flujo del texto */
+  margin-bottom: 1rem; /* Margen inferior de 1rem */
 }
 
 /* Efecto de desenfoque para el fondo - SOLO el contenido detrás del modal */
 body.modal-open::before {
-  content: '';
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  backdrop-filter: blur(5px);
+  content: ''; /* Contenido pseudo-elemento vacío */
+  position: fixed; /* Posición fija en la ventana */
+  top: 0; /* Pegado arriba */
+  left: 0; /* Pegado a la izquierda */
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
+  backdrop-filter: blur(5px); /* Efecto de desenfoque de 5px al fondo */
   z-index: 999; /* Un z-index menor que el modal */
   pointer-events: none; /* Permite hacer clic a través de esta capa */
 }
 
 body.modal-open {
-  overflow: hidden;
+  overflow: hidden; /* Oculta el scroll del body cuando el modal está abierto */
 }
 
-/* Overlay del modal */
+/* Fondo borroso cuando abre la ventana emergente */
 .modal-overlay {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+  position: fixed; /* Posición fija en la ventana */
+  top: 0; /* Pegado arriba */
+  left: 0; /* Pegado a la izquierda */
+  width: 100%; /* Ancho completo */
+  height: 100%; /* Alto completo */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo negro semitransparente (70% opacidad) */
+  display: flex; /* Activa flexbox */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  z-index: 1000; /* Alto índice z para estar sobre otros elementos */
+  opacity: 0; /* Invisible inicialmente */
+  visibility: hidden; /* Oculto para interactividad */
+  transition: opacity 0.3s ease, visibility 0.3s ease; /* Animación suave para opacidad y visibilidad */
 }
 
 .modal-overlay.active {
-  opacity: 1;
-  visibility: visible;
+  opacity: 1; /* Opacidad completa (visible) */
+  visibility: visible; /* Visible para interactividad */
 }
 
-/* Ventana modal */
+/* Ventana Emergente */
 .modal {
-  background: white;
-  border-radius: 12px;
-  width: 90%;
-  max-width: 600px;
-  max-height: 80vh;
-  overflow-y: auto;
-  padding: 2rem;
-  position: relative;
-  transform: translateY(20px);
-  opacity: 0;
-  transition: transform 0.3s ease, opacity 0.3s ease;
+  background: var(--light); /* Fondo color variable --light */
+  border-radius: 12px; /* Bordes redondeados de 12px */
+  width: 90%; /* Ancho del 90% del contenedor padre */
+  max-width: 600px; /* Ancho máximo de 600px */
+  max-height: 80vh; /* Altura máxima del 80% de la altura visible */
+  overflow-y: auto; /* Scroll vertical automático si el contenido excede la altura */
+  padding: 2rem; /* Espaciado interno de 2rem */
+  position: relative; /* Posición relativa para elementos hijos absolutos */
+  transform: translateY(20px); /* Desplazado 20px hacia abajo inicialmente */
+  opacity: 0; /* Invisible inicialmente */
+  transition: transform 0.3s ease, opacity 0.3s ease; /* Animación suave para transformación y opacidad */
 }
 
 .modal-overlay.active .modal {
-  transform: translateY(0);
-  opacity: 1;
+  transform: translateY(0); /* Vuelve a posición original (sin desplazamiento) */
+  opacity: 1; /* Opacidad completa (visible) */
 }
 
-/* Botón de cerrar */
+/*Boton X para cerrar ventanas emergentes*/
 .modal-close {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background: none;
-  border: none;
-  font-size: 1.5rem;
-  cursor: pointer;
-  color: #777;
+  position: absolute; /* Posición absoluta dentro del modal */
+  top: 1rem; /* 1rem desde arriba */
+  right: 1rem; /* 1rem desde la derecha */
+  background: none; /* Sin fondo */
+  border: none; /* Sin borde */
+  font-size: 1.5rem; /* Tamaño de fuente de 1.5rem (24px aprox) */
+  cursor: pointer; /* Cursor tipo pointer al pasar sobre el botón */
+  color: #777; /* Color gris (#777) */
 }
 
+/*Boton X para cerrar ventanas emergentes (cuando le ponen el cursor encima)*/
 .modal-close:hover {
-  color: var(--primary);
+  color: var(--accent); /* Color usando variable CSS --accent al hacer hover */
 }
 
-/* Título del modal */
+/* Título de ventanas emergentes */
 .modal-title {
-  color: var(--primary);
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
+  color: var(--primary); /* Color usando variable CSS --primary */
+  margin-bottom: 1rem; /* Margen inferior de 1rem */
+  font-size: 1.8rem; /* Tamaño de fuente de 1.8rem (28.8px aprox) */
 }
 
-/* Contenido del modal */
+/* texto de ventanas emergentes */
 .modal-content {
-  color: #555;
-  line-height: 1.6;
+  color: #555; /* Color gris oscuro (#555) */
+  line-height: 1.6; /* Altura de línea de 1.6 para mejor legibilidad */
+}
+/**************************************************************************/
+/* No estás seguro de que necesita tu negocio para vender más */
+.cta {
+  text-align: center; /* Centra el texto horizontalmente */
+  background: var(--light);   /* Fondo con gradiente de 13° usando variables CSS --gray a --dark */
+  color: var(--primary); /* Color de texto blanco */
 }
 
-/* alt: Sección con fondo alternativo */
+.cta h2 {
+  color: var(--dark); /* Color de texto blanco para elementos h2 dentro de .cta */
+}
+
+/****************************************************************************/
+/* La Inteligencia Artificial: nuestro aliado estratégico */
 .alt {
-  background: var(--light);
+  background: var(--light); /* Fondo usando variable CSS --light */
 }
 
-/* proof-grid: Grid para sección de prueba social */
 .proof-grid {
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 3rem;
-  align-items: center;
+  display: grid; /* Activa Grid Layout */
+  grid-template-columns: 1.5fr 1fr; /* Crea 2 columnas: la primera 1.5 veces más ancha que la segunda */
+  gap: 3rem; /* Espacio de 3rem entre columnas y filas */
+  align-items: center; /* Centra verticalmente los elementos hijos */
 }
 
 /* checklist: Lista con viñetas de verificación */
 .checklist {
-  list-style: none;
+  list-style: none; /* Elimina los estilos de lista (viñetas) */
 }
 
 .checklist li {
-  margin-bottom: 1rem;
-  padding-left: 2rem;
-  position: relative;
+  margin-bottom: 1rem; /* Margen inferior de 1rem entre items de lista */
+  padding-left: 2rem; /* Espaciado interno izquierdo de 2rem para hacer espacio al pseudo-elemento */
+  position: relative; /* Establece posición relativa para elementos hijos absolutos */
 }
 
 .checklist li:before {
-  content: "✓";
-  color: var(--accent);
-  position: absolute;
-  left: 0;
-  font-weight: bold;
+  content: "✓"; /* Añade un símbolo de checkmark como contenido */
+  color: var(--accent); /* Color usando variable CSS --accent */
+  position: absolute; /* Posición absoluta dentro del li */
+  left: 0; /* Pegado a la izquierda del contenedor */
+  font-weight: bold; /* Texto en negrita */
 }
 
 /* quote: Cita o testimonio */
 .quote {
-  background: var(--primary);
-  color: white;
-  position: relative;
+  background: var(--primary); /* Fondo usando variable CSS --primary */
+  color: white; /* Color de texto blanco */
+  position: relative; /* Establece posición relativa para elementos hijos absolutos */
 }
 
 .quote:before {
-  content: '"';
-  font-size: 4rem;
-  color: var(--accent);
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  opacity: 0.3;
+  content: 'Kaire Digital'; /* Añade el texto 'Kaire Digital' como contenido */
+  font-size: 5rem; /* Tamaño de fuente muy grande de 5rem (80px aprox) */
+  color: var(--light); /* Color usando variable CSS --light */
+  position: absolute; /* Posición absoluta dentro del contenedor */
+  top: 50%; /* Centra verticalmente - 50% desde arriba */
+  left: 50%; /* Centra horizontalmente - 50% desde izquierda */
+  transform: translate(-50%, -50%); /* Ajusta el centro exacto */
+  opacity: 0.2; /* Opacidad al 20% (muy transparente) */
+  z-index: 1; /* Asegura que esté detrás del contenido */
+  pointer-events: none; /* Permite hacer clic a través de la marca de agua */
 }
 
 .quote p {
-  font-style: italic;
-  margin-bottom: 1rem;
+  font-style: italic; /* Texto en estilo itálico */
+  margin-bottom: 1rem; /* Margen inferior de 1rem */
 }
 
 .author {
-  color: var(--accent);
-  font-weight: 600;
-}
-
-/* cta: Llamado a la acción */
-.cta {
-  text-align: center;
-  background: linear-gradient(135deg, var(--primary) 0%, var(--dark) 100%);
-  color: white;
-}
-
-.cta h2 {
-  color: white;
+  color: var(--accent); /* Color usando variable CSS --accent */
+  font-weight: 600; /* Grosor de fuente seminegrita (600) */
 }
 
 /* =============================================
