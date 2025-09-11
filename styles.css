@@ -719,6 +719,54 @@ body.modal-open {
 .values-preview i {
   color: var(--accent);
 }
+
+.social-links {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  justify-content: center;
+}
+
+.social-links a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.social-links a:hover {
+  background: var(--accent);
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+}
+
+.social-links i {
+  font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .social-links {
+    gap: 0.75rem;
+  }
+  
+  .social-links a {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .social-links i {
+    font-size: 1.1rem;
+  }
+}
 /***********************************************************/
 /*Seccion de nuestra historia*/
 /* two-col: Grid de dos columnas */
@@ -729,8 +777,8 @@ body.modal-open {
 }
 
 .image-container {
-  width: 100%;
-  max-width: 500px;
+  width: 75%;
+  max-width: 350px;
   margin: 40px auto;
   border-radius: 12px;
   overflow: hidden;
@@ -770,9 +818,44 @@ body.modal-open {
 
 /* Contenedor de texto con efecto de desvanecimiento */
 .two-col2 {
-  grid-template-columns: 2fr 1fr; /* Cambia de 1fr 1fr a 2fr 1fr */
+  grid-template-columns: 2fr 1fr;
   gap: 3rem;
   align-items: start;
+}
+
+/* Hacerlo responsivo */
+@media (max-width: 1024px) {
+  .two-col2 {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .two-col2 {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  /* Ajustes adicionales para móviles */
+  .leader-image-container {
+    max-width: 300px;
+    margin: 0 auto 1.5rem;
+  }
+  
+  .leadership-card {
+    order: -1; /* Opcional: poner la tarjeta primero en móviles */
+  }
+}
+
+@media (max-width: 480px) {
+  .two-col2 {
+    gap: 1.5rem;
+  }
+  
+  .leader-image-container {
+    max-width: 250px;
+  }
 }
 
 .text-content {
