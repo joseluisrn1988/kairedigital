@@ -11,6 +11,7 @@
   --gray: #718096;
   --inter: 'Inter', sans-serif;
   --montserrat: 'Montserrat', sans-serif;
+  --poppins: 'Poppins', sans-serif;
 }
 
 /* Reset y estilos base */
@@ -98,10 +99,25 @@ a:hover {
   color: #1A2B4C;
   font-weight: 700;
   font-size: 1.25rem;
+  font-family: 'Poppins', sans-serif;
+  letter-spacing: -0.8px;
 }
 
 .logo .accent {
-  color: var(--accent);
+  color: var(--gray);
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  margin-right: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.logo:hover .logo-img {
+  transform: scale(1.05);
 }
 
 /* Site-nav: Menu de Navegación principal */
@@ -112,7 +128,7 @@ a:hover {
 }
 
 .site-nav a {
-  color: #1A2B4C;
+  color: var(--gray);
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -135,7 +151,7 @@ a:hover {
 .nav-toggle span {
   width: 25px;
   height: 3px;
-  background: white;
+  background: var(--primary);
   margin: 3px 0;
   transition: 0.3s;
 }
@@ -526,7 +542,7 @@ body.modal-open {
 }
 
 .quote:before {
-  content: 'Kaire Digital'; /* Añade el texto 'Kaire Digital' como contenido */
+  content: 'Kairos Digital'; /* Añade el texto 'Kaire Digital' como contenido */
   font-size: 5rem; /* Tamaño de fuente muy grande de 5rem (80px aprox) */
   color: var(--light); /* Color usando variable CSS --light */
   position: absolute; /* Posición absoluta dentro del contenedor */
@@ -554,11 +570,157 @@ body.modal-open {
 
 /* nosotros-hero: Hero específico para página Nosotros */
 .nosotros-hero {
-  background: linear-gradient(135deg, rgba(26, 43, 76, 0.9) 0%, rgba(251, 0, 255, 0.7) 100%);
+  background: linear-gradient(135deg, rgba(26, 43, 76, 0.9) 0%, rgba(74, 0, 75, 0.7) 100%);
   position: relative;
   z-index: 2;
+  padding: 6rem 0;
 }
 
+/* Hero Grid para Nosotros */
+.hero-grid-nosotros {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+}
+
+/* Contenido principal del hero */
+.hero-content-nosotros h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  color: white;
+  line-height: 1.2;
+}
+
+.hero-subtitle {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  line-height: 1.6;
+}
+
+/* Estadísticas en hero */
+.hero-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin: 2.5rem 0;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.stat-item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.stat-number {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+  font-family: var(--montserrat);
+}
+
+.stat-label {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+}
+
+/* CTA en hero */
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+/* Lado visual del hero */
+.hero-visual-nosotros {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.visual-card {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: transform 0.3s, background 0.3s;
+}
+
+.visual-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.card-icon {
+  width: 60px;
+  height: 60px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: white;
+}
+
+.visual-card h3 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.visual-card p {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0;
+}
+
+.values-preview {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 16px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.values-preview h4 {
+  color: white;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.values-preview ul {
+  list-style: none;
+}
+
+.values-preview li {
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.values-preview i {
+  color: var(--accent);
+}
+/***********************************************************/
+/*Seccion de nuestra historia*/
 /* two-col: Grid de dos columnas */
 .two-col {
   grid-template-columns: 1fr 1fr;
@@ -566,29 +728,200 @@ body.modal-open {
   align-items: start;
 }
 
-/* stats: Contenedor de estadísticas */
-.stats {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1.5rem;
-  margin-top: 2rem;
+.image-container {
+  width: 70%;
+  max-width: 350px;
+  margin: 40px auto;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* stat: Elemento individual de estadística */
-.stat {
-  text-align: center;
-  padding: 1.5rem;
-  background: var(--light);
-  border-radius: 8px;
-}
-
-.stat .counter {
+.image-container img {
+  width: 100%;
+  height: auto;
   display: block;
-  font-size: 2rem;
-  font-weight: 800;
-  color: var(--accent);
 }
 
+.image-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
+  .image-container {
+    width: 85%; /* Un poco más ancho en móviles */
+    max-width: 280px;
+    margin: 30px auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .image-container {
+    width: 90%;
+    max-width: 250px;
+    margin: 20px auto;
+  }
+}
+
+/****************************************************************/
+/* ESTILOS PARA SECCIÓN QUIÉN LIDERA*/
+
+/* Contenedor de texto con efecto de desvanecimiento */
+.two-col2 {
+  grid-template-columns: 2fr 1fr; /* Cambia de 1fr 1fr a 2fr 1fr */
+  gap: 3rem;
+  align-items: start;
+}
+
+.text-content {
+  max-height: 300px;
+  overflow: hidden;
+  position: relative;
+  transition: max-height 0.8s ease;
+  margin-bottom: 1.5rem;
+}
+
+.text-content.collapsed {
+  max-height: 300px;
+}
+
+.text-content.expanded {
+  max-height: none;
+}
+
+.text-content::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background: linear-gradient(to bottom, rgba(245, 247, 250, 0) 0%, var(--light) 100%);
+  transition: opacity 0.5s ease;
+  pointer-events: none;
+}
+
+.text-content.expanded::after {
+  opacity: 0;
+}
+
+/* Botón Leer más/menos */
+.read-more-btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  border-radius: 25px;
+  padding: 0.75rem 1.5rem;
+}
+
+.read-more-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(46, 204, 113, 0.3);
+}
+
+.btn-icon {
+  transition: transform 0.4s ease;
+}
+
+.read-more-btn.expanded .btn-icon {
+  transform: rotate(180deg);
+}
+
+/* Tarjeta de liderazgo */
+.leadership-card {
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.leadership-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Contenedor de imagen */
+.leader-image-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%; /* Esto hace que sea cuadrado */
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.leader-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.leader-image-container:hover .leader-image {
+  transform: scale(1.05);
+}
+
+/* Overlay de imagen */
+.image-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(to top, rgba(26, 43, 76, 0.9) 0%, transparent 100%);
+  padding: 1.5rem 1rem 0.75rem;
+  color: white;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.4s ease;
+}
+
+.leader-image-container:hover .image-overlay {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.overlay-content h4 {
+  color: white;
+  margin-bottom: 0.25rem;
+  font-size: 1.3rem;
+}
+
+.overlay-content p {
+  color: var(--accent);
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Responsive para la sección de liderazgo */
+@media (max-width: 768px) {
+  .leader-image-container {
+    padding-bottom: 80%; /* Un poco menos cuadrado en móviles si prefieres */
+  }
+  
+  .image-overlay {
+    opacity: 1;
+    transform: translateY(0);
+    background: rgba(26, 43, 76, 0.8);
+    padding: 1rem 0.75rem 0.5rem;
+  }
+  
+  .overlay-content h4 {
+    font-size: 1.1rem;
+  }
+  
+  .overlay-content p {
+    font-size: 0.8rem;
+  }
+}
+
+/***********************************************************/
 /* big: Modificador para pasos grandes */
 .steps.big {
   counter-reset: step-counter;
@@ -616,6 +949,7 @@ body.modal-open {
   font-weight: bold;
   font-size: 1.5rem;
 }
+
 
 /* =============================================
    PÁGINA SERVICIOS - Estilos específicos
@@ -1002,6 +1336,20 @@ body.modal-open {
     text-align: center;
   }
   
+  .hero-grid-nosotros {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    text-align: center;
+  }
+  
+  .hero-stats {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .hero-cta {
+    justify-content: center;
+  }
+  
   .cards-3 {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -1073,6 +1421,11 @@ body.modal-open {
     grid-template-columns: 1fr;
   }
   
+  .hero-stats {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
   .newsletter-form {
     flex-direction: column;
   }
@@ -1085,11 +1438,52 @@ body.modal-open {
     font-size: 1.75rem;
   }
   
-  .hero-copy h1 {
-    font-size: 2.5rem;
+  .hero-content-nosotros h1 {
+    font-size: 2.2rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1.1rem;
+  }
+  
+  .stat-number {
+    font-size: 2rem;
   }
   
   .section {
     padding: 2rem 0;
+  }
+  
+  .hero-cta {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .visual-card {
+    padding: 1.5rem;
+  }
+  
+  .card-icon {
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-item {
+    padding: 1rem;
+  }
+  
+  .hero-content-nosotros h1 {
+    font-size: 1.8rem;
+  }
+  
+  .hero-subtitle {
+    font-size: 1rem;
   }
 }
