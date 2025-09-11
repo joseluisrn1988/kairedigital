@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -16,10 +17,9 @@
 <!-- Header: Navegación principal del sitio -->
 <header class="site-header">
   <div class="container nav-wrap">
-    <!-- Logo: Enlace a la página principal con marca -->
-    <a class="logo" href="index.html" aria-label="Kaire Digital Home">
-      <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#1A2B4C"/><path d="M7 16l5-8 5 8" stroke="#2ECC71" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      <span>Kaire<span class="accent">Digital</span></span>
+    <a class="logo" href="index.html" aria-label="Kairos Digital Home">
+      <img src="https://raw.githubusercontent.com/joseluisrn1988/kairedigital/refs/heads/main/imagenes/IconoKairos.png" alt="Kairos Digital" width="36" height="36" class="logo-img">
+      <span>Kairos<span class="accent">D</span></span>
     </a>
     <!-- Botón menú móvil: Controla la visualización del menú en dispositivos pequeños -->
     <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Abrir menú">
@@ -43,35 +43,149 @@
 <!-- Hero: Sección principal de la página "Nosotros" -->
 <section class="section page-hero nosotros-hero">
   <canvas id="particle-canvas"></canvas>
-  <div class="container narrow reveal">
-    <h1>Nosotros</h1>
-    <p>Somos una agencia boutique enfocada en Pymes mexicanas y latinoamericanas. Combinamos estrategia, creatividad y operación para lograr resultados medibles.</p>
+  <div class="container">
+    <div class="hero-grid-nosotros">
+      <div class="hero-content-nosotros reveal">
+        <h1>El proposito de <span class="grad">kairosDigital </span>es:</h1>
+        <p class="hero-subtitle">Impulsar las ventas y el crecimiento de los negocios y las Pymes con estrategia de Marca y herramientas digitales, fortaleciendo el emprendimiento en México y Latinoamérica, para que tengan las mismas oportunidades de crecimiento que las grandes marcas.</p>
+        
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-number counter" data-target="95">0</div>
+            <div class="stat-label">Satisfacción clientes</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number counter" data-target="72">0</div>
+            <div class="stat-label">Tasa de recomendación</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number counter" data-target="30">0</div>
+            <div class="stat-label">Días para ver avances</div>
+          </div>
+        </div>
+        
+        <div class="hero-cta">
+          <a href="#valores" class="btn btn-accent">Conoce nuestros valores</a>
+          <a href="contacto.html" class="btn btn-ghost">Contactar ahora</a>
+        </div>
+      </div>
+      
+      <div class="hero-visual-nosotros reveal">
+        <div class="visual-card">
+          <h3>Misión</h3>
+          <p>Ofrecer soluciones estratégicas y creativas en branding y marketing digital, con un enfoque medible, honesto y enfocado en resultados, que permita a los negocios digitales competir en igualdad de condiciones.</p>
+        </div>
+        
+        <div class="visual-card">
+          <h3>Visión</h3>
+          <p>Ser la agencia de referencia en Latinoamérica que transforma negocios y Pymes, en marcas competitivas y sostenibles a nivel global.</p>
+        </div>
+        
+        <div class="values-preview">
+          <h4>Nuestros valores</h4>
+          <ul>
+            <li><i class="fas fa-check-circle"></i> Honestidad radical</li>
+            <li><i class="fas fa-check-circle"></i> Responsabilidad</li>
+            <li><i class="fas fa-check-circle"></i> Empatía local</li>
+            <li><i class="fas fa-check-circle"></i> Mejora continua</li>
+          </ul>
+        </div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- Misión y visión: Información fundamental de la empresa -->
-<section class="section">
+<!-- Seccion de nuestra historia -->
+<section class="section" id="valores">
   <div class="container grid two-col">
-    <div class="reveal">
-      <h2>Misión</h2>
-      <p>Impulsar a las empresas a crecer con estrategias digitales claras, medibles y efectivas, fortaleciendo el emprendimiento local en México y LATAM para que las Pymes compitan como grandes.</p>
-      <h2>Visión</h2>
-      <p>Ser el socio estratégico de referencia para Pymes que buscan claridad, crecimiento rentable y decisiones basadas en datos.</p>
+    <!-- Logo de Kairos -->
+    <div class="image-container reveal">
+      <img src="Nosotros/Logo-Kairos.png" alt="Nuestro equipo de trabajo" class="replacement-image">
     </div>
-    <!-- Valores y estadísticas: Muestra los principios y logros -->
+    <!-- Nuestra historia -->
     <div class="reveal">
-      <h2>Valores</h2>
-      <ul class="checklist">
-        <li>Honestidad radical en la comunicación</li>
-        <li>Responsabilidad por resultados</li>
-        <li>Empatía por el contexto local</li>
-        <li>Aprendizaje y mejora continua</li>
-      </ul>
-      <div class="stats">
-        <div class="stat"><span class="counter" data-target="95">0</span>% satisfacción</div>
-        <div class="stat"><span class="counter" data-target="72">0</span>% recomendaciones</div>
-        <div class="stat"><span class="counter" data-target="30">0</span> días para ver avances</div>
+      <h2>¿Quiénes somos?</h2>
+      <p><strong>Somos Kairos Digital</strong>, una agencia que nació para resolver un problema común en nuestra región: muchos negocios invierten en “marketing” sin estrategia, lo que provoca pérdida de dinero y la falta de posicionamiento en el mercado digital.</p>
+      <p>Acompañamos a emprendedores y PYMEs con planes claros, metas medibles y comunicación directa.</p>
+      <p>Entendemos los retos de competir en mercados exigentes y con presupuestos ajustados; por eso ponemos el foco en lo esencial: <strong>posicionamiento, diferenciación y ejecución constante</strong>.</p>
+      <p>Nuestro objetivo es que cada peso invertido se quede en nuestra región y rinda frutos: más ventas, mejores empleos y marcas que perduren.<br>
+      Porque <strong>cuando tu negocio crece, todos crecemos</strong>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Liderazgo y diferenciadores: Información sobre el fundador y ventajas competitivas -->
+<section class="section">
+  <div class="container grid two-col2">
+    <div class="reveal">
+      <h2>Quién lidera</h2>
+      <h3>Fundada por Jose Luis Ramirez (Ing. en Robótica, UPGto).</h3>
+      
+      <div class="text-content" id="text-content">
+        <p>Mi camino profesional inició en 2013, cuando comencé trabajando en un laboratorio de calidad especializado en pruebas no destructivas (PND). En esa etapa pasé de ser inspector NDT a encargarme del área de marketing de Wellden de México, donde logré hitos que marcaron el rumbo de mi carrera: diseñé el logo y la identidad visual, desarrollé su sitio web, lo posicioné en el primer lugar de Google y con ello la empresa incrementó en un 400% sus contratos.</p>
+        <p>Gracias a este trabajo, tuve la oportunidad de participar indirectamente en grandes proyectos de construcción e infraestructura, como:</p>
+        <ul class="list">
+          <li>Planta BMW en San Luis Potosí.</li>
+          <li>Fashion Mall en Tampico.</li>
+          <li>Ampliación y construcción del Acuario en Altacia, León, Gto.</li>
+          <li>Planta Santa Clara de FEMSA en Lagos de Moreno, Jalisco.</li>
+          <li>Empresas del Parque Industrial Toyota en Apaseo el Grande, Gto.</li>   
+        </ul>
+        <p>Durante esos años me encargué de todo el ecosistema de comunicación visual: página web, posicionamiento SEO, uniformes, papelería y membretes.</p>
+        <p>Tras el fallecimiento del dueño y la desaparición de Wellden, decidí emprender mi propio camino. Fundé una empresa en la que construí desde cero mi marca y mi branding, logrando captar clientes importantes en Celaya, Apaseos y Querétaro. Sin embargo, la falta de una estrategia de marca sólida y diversos problemas operativos llevaron al cierre del negocio después de 8 años. Esa experiencia, aunque difícil, me permitió comprender de primera mano lo crucial que es contar con una estrategia de marca bien definida.</p>
+        <p>En ese proceso fortalecí y consolidé mis conocimientos en:</p>
+        <ul class="list">
+          <li>Desarrollo web.</li>
+          <li>Diseño gráfico.</li>
+          <li>Edición de video.</li>
+          <li>Creación de contenido para redes sociales.</li>
+          <li>Inteligencia artificial aplicada a marketing.</li>
+          <li>SEO y posicionamiento en Google.</li>
+          <li>Publicidad digital (Facebook Ads y Google Ads).</li>
+        </ul>
+        <p>Al mismo tiempo, numerosos empresarios me buscaron para ayudarles a profesionalizar su imagen y atraer más clientes. Diseñé logos, páginas web, estrategias de marketing y campañas digitales que les permitieron generar más leads y ventas.</p>
+        <p>Finalmente, decidí especializarme en Estrategia de Marca, entendida como el proceso integral que define y alinea cada aspecto de un negocio:</p>
+        <ul class="list">
+          <li>Definición de la esencia de la empresa.</li>
+          <li>Identificación del cliente ideal.</li>
+          <li>Investigación de mercado y análisis de la competencia.</li>
+          <li>Desarrollo de la propuesta de valor.</li>
+          <li>Análisis FODA.</li>
+          <li>Creación de voz y tono de marca.</li>
+          <li>Identidad visual y comunicación estratégica.</li>
+        </ul>
+        <p>Hoy, toda esta trayectoria me respalda para ayudar a Pymes y negocios en crecimiento a transformar su presencia en el mercado, construir marcas sólidas y generar resultados medibles y sostenibles.</p>
       </div>
+      
+      <button id="read-more-btn" class="btn btn-accent read-more-btn">
+        <span class="btn-text">Leer más</span>
+        <i class="fas fa-chevron-down btn-icon"></i>
+      </button>
+    </div>
+    
+    <div class="card reveal leadership-card">
+      <div class="leader-image-container">
+        <img src="https://raw.githubusercontent.com/joseluisrn1988/kairedigital/refs/heads/main/imagenes/Fundador.jpg" 
+             alt="Jose Luis Ramirez - Fundador de Kaire Digital" 
+             class="leader-image">
+        <div class="image-overlay">
+          <div class="overlay-content">
+            <h4>Jose Luis Ramirez</h4>
+            <p>Fundador & CEO</p>
+          </div>
+        </div>
+      </div>
+      
+      <h3>Habilidades</h3>
+      <ul class="checklist">
+        <li>Ingeniero en Robótica</li>
+        <li>Especialista en inteligencia artificial</li>
+        <li>Experto en Marketing y Ventas</li>
+        <li>Desarrollador WEB</li>
+        <li>Experto en SEO y analisis de datos</li>
+        <li>Estratega de Marcas y negocios digitales</li>
+        <li>Diseñador y Creador de contenido en Imagen y Video</li>
+      </ul>
     </div>
   </div>
 </section>
@@ -79,35 +193,14 @@
 <!-- Metodología: Explica el proceso de trabajo -->
 <section class="section alt">
   <div class="container reveal">
-    <h2>Nuestra metodología</h2>
+    <h2>En qué creemos</h2>
     <ol class="steps big">
-      <li><span>1</span> Descubrimiento: respuesta &le; 2 h hábiles</li>
-      <li><span>2</span> Diagnóstico (20–30 min): objetivos y métricas actuales</li>
-      <li><span>3</span> Propuesta (48–72 h): objetivos, entregables, cronograma, inversión</li>
-      <li><span>4</span> Onboarding: accesos, brand kit, buyer persona, prioridades</li>
-      <li><span>5</span> Ejecución: sprints quincenales; tablero Kanban compartido</li>
-      <li><span>6</span> Reporte mensual: resultados, insights y decisiones</li>
-      <li><span>7</span> Cierre/Renovación: evaluación de ROI y siguientes pasos</li>
+      <li><span>1</span> Creemos en las personas antes que en las marcas: Porque detrás de cada negocio hay sueños, esfuerzo y familias que dependen de él.</li>
+      <li><span>2</span> Creemos en la estrategia sobre la improvisación: Cada acción debe tener un propósito, cada inversión un retorno y cada marca una historia clara que contar.</li>
+      <li><span>3</span> Creemos en el poder de las PYMEs para transformar comunidades: Cuando un negocio local crece, genera empleos, mueve la economía y abre oportunidades para todos.</li>
+      <li><span>4</span> Creemos en la innovación con sentido: La tecnología y la creatividad son nuestras herramientas, pero el verdadero valor está en cómo las usamos para resolver problemas reales.</li>
+      <li><span>5</span> Creemos en el crecimiento compartido: Nuestro éxito está ligado al de nuestros clientes: si tu negocio prospera, nuestra misión se cumple.</li>
     </ol>
-  </div>
-</section>
-
-<!-- Liderazgo y diferenciadores: Información sobre el fundador y ventajas competitivas -->
-<section class="section">
-  <div class="container grid two-col">
-    <div class="reveal">
-      <h2>Quién lidera</h2>
-      <p>Fundada por Jose Luis Ramirez (Ing. en Robótica, UPG). Experiencia en ingeniería, calidad y negocios; enfoque en estrategia, análisis y creatividad orientada a ventas.</p>
-    </div>
-    <div class="card reveal">
-      <h3>Diferenciadores</h3>
-      <ul class="list">
-        <li>Estrategia + creatividades + operación en un solo lugar</li>
-        <li>Procesos claros y comunicación constante</li>
-        <li>Enfoque en Pymes con contexto México/LATAM</li>
-        <li>Entregables accionables, sin paja</li>
-      </ul>
-    </div>
   </div>
 </section>
 
@@ -117,8 +210,8 @@
   <div class="container footer-grid">
     <div>
       <div class="logo footer-logo">
-        <svg width="28" height="28" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="#1A2B4C"/><path d="M7 16l5-8 5 8" stroke="#2ECC71" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        <span>Kaire<span class="accent">Digital</span></span>
+        <img src="https://raw.githubusercontent.com/joseluisrn1988/kairedigital/refs/heads/main/imagenes/IconoKairos2.png" alt="Kairos Digital" width="36" height="36" class="logo-img">
+        <span>Kairos<span class="accent">D</span></span>
       </div>
       <p>Agencia de estrategia de marca y marketing digital para Pymes mexicanas y de LATAM. Resultados claros, comunicación honesta y ejecución enfocada.</p>
     </div>
