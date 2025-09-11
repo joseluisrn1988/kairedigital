@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function() {
       primaryNav.classList.toggle('active');
     });
   }
-  
+
   // CONTADORES ANIMADOS: Animación para números que cuentan hacia arriba
   const counters = document.querySelectorAll('.counter');
   
@@ -388,5 +388,61 @@ function resizeCanvas() {
       });
     }
   });
+
+// =============================================
+// SECCIÓN QUIÉN LIDERA - Funcionalidad leer más/menos
+// =============================================
+const textContent = document.getElementById('text-content');
+const readMoreBtn = document.getElementById('read-more-btn');
+
+if (textContent && readMoreBtn) {
+  const btnText = readMoreBtn.querySelector('.btn-text');
+  const btnIcon = readMoreBtn.querySelector('.btn-icon');
   
+  // Inicializar estado colapsado
+  textContent.classList.add('collapsed');
+  
+  readMoreBtn.addEventListener('click', function() {
+    const isExpanded = textContent.classList.contains('expanded');
+    
+    if (isExpanded) {
+      // Colapsar
+      textContent.classList.remove('expanded');
+      textContent.classList.add('collapsed');
+      btnText.textContent = 'Leer más';
+      readMoreBtn.classList.remove('expanded');
+      
+      // Scroll suave hacia la sección
+      setTimeout(() => {
+        this.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      }, 300);
+    } else {
+      // Expandir - usar height automático
+      const fullHeight = textContent.scrollHeight + 'px';
+      
+      // Primero establecer altura fija para la transición
+      textContent.style.maxHeight = fullHeight;
+      textContent.classList.remove('collapsed');
+      textContent.classList.add('expanded');
+      
+      btnText.textContent = 'Leer menos';
+      readMoreBtn.classList.add('expanded');
+      
+      // Después de la transición, permitir altura automática
+      setTimeout(() => {
+        if (textContent.classList.contains('expanded')) {
+          textContent.style.maxHeight = 'none';
+        }
+      }, 800); // Tiempo igual a la duración de la transición
+    }
+  });
+  
+  // Ajustar altura inicial para mostrar aproximadamente el 30%
+  setTimeout(() => {
+    const contentHeight = textContent.scrollHeight;
+    const initialHeight = contentHeight * 0.3;
+    textContent.style.maxHeight = initialHeight + 'px';
+  }, 100);
+}
+
 });
